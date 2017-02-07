@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Barrio');
+/* CSS Reset */
+*{
+  /*Remove spacing */
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url("https://media.giphy.com/media/GPBq4o8ypef7O/giphy.gif");
+  /*Stretch image and stopit tiling*/
+  background-size: cover;
+  /*Full height background image
+  vh=viewport height and makes the image's height match the browser window*/
+  background-attachment: fixed;
+}
+iframe{
+  width:100%;
+  pointer-events: none;
+}
+h2{
+  font-family: 'Barrio', cursive;
+}
+.spacing{
+  margin-bottom: 2vh;
+}
+
+header {
+  text-align: center;
+    min-height: 100vh
+}
+.first{
+  background-color: grey;
+  padding:10% 20%;
+}
+
+.border-box {
+  padding:2%;
+  background-color: white;
+  text-align: center;
+}
+
+.gallery {
+  height: 400px;
+}
+
+.gallery img {
+  max-width: 100%;
+}
+
+footer{
+  text-align: center;
+  background-color:yellow;
+}
+
+/*Media queries*/
+@media(max-width: 768px) {
+  .gallery img {
+    height: 300px;
+  }
+}
+
+@media(max-width: 400px) {
+  .gallery img {
+    height: 200px;
+  }
+}
